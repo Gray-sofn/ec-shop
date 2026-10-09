@@ -7,7 +7,7 @@ const ProductProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch('http://localhost:3000/api/products');
+      const response = await fetch('../../APIserver/data.json');
       const data = await response.json();
       // console.log(data);
       setProducts(data);
