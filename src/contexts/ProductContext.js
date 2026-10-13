@@ -7,7 +7,7 @@ const ProductProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch('/APIserver/data');
+      const response = await fetch('https://raw.githubusercontent.com/Gray-sofn/ec-shop-api/refs/heads/main/data.json');
       const data = await response.json();
       // console.log(data);
       setProducts(data);
